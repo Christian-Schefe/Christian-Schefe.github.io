@@ -44,7 +44,7 @@ export const ThemeToggle = () => {
   const svg = theme === Theme.Dark ? darkSvg : theme === Theme.Light ? lightSvg : systemDarkMode ? systemDarkSvg : systemLightSvg;
 
   return (
-    <div className="text-white fixed p-1 top-2 right-2 flex justify-center gap-1">
+    <div className="flex justify-center">
       <button className="w-6 h-6 font-bold flex text-xl items-center justify-center rounded-sm" onClick={cycleTheme}>
         <img src={svg}></img>
       </button>

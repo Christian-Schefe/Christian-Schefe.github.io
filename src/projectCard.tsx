@@ -1,7 +1,10 @@
+import { GlassCard } from "./glassCard";
+
 export const ProjectCard = () => {
     return (
-        <div className="dark:bg-neutral-800 bg-neutral-200 rounded-lg p-8 mt-8">
-            card
-        </div>
+        <GlassCard>
+            <p>card</p>
+            <p>card</p>
+        </GlassCard>
     )
 };
