@@ -20,3 +20,9 @@
   background-image: radial-gradient(circle at center, #4377ef, #7befd0);
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
+
+#bg-image {
+  user-select: none;
+  pointer-events: none;
+  user-drag: none;
+}
