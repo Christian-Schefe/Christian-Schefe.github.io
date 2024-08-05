@@ -3,17 +3,17 @@ import { NavBar } from './navbar';
 import { ProjectCard } from './projectCard';
 
 function App() {
-  const content = [];
-  for (let i = 0; i < 5; i++) {
-    content.push(<ProjectCard />);
-  }
-
   return (
-    <div className="w-full h-full flex-grow flex flex-col items-center bg-gray-100">
+    <div className="w-full h-full flex-grow flex flex-col bg-gray-100 dark:bg-neutral-900">
       <NavBar />
-      <div className="max-w-2xl h-full flex flex-col w-full m-8 ">
-        <h1 className="text-center font-bold text-2xl">Christian Schefe</h1>
-        {content}
+      <div className="w-full h-full flex flex-col items-center">
+        <div className="max-w-2xl h-full flex flex-col w-full m-8 gap-6">
+          <ProjectCard
+            title="Yeast - Your Easy & Awesome Serialization Toolkit"
+            description="Yeast is a Unity Code Utility Package for serializing and deserializing data to different formats such as JSON and XML"
+            githubUrl='https://github.com/Christian-Schefe/Yeast'
+          />
+        </div>
       </div>
       <Footer />
     </div>

@@ -1,15 +1,15 @@
+import { GlassCard } from './glassCard';
+
 export const Footer = () => {
   return (
-    <div className="w-full flex flex-col items-center">
-      <hr className="border-neutral-200 dark:border-neutral-800 border-2 w-full"></hr>
-      <div className="flex gap-8 w-full p-4 items-center max-w-4xl">
+    <GlassCard className="w-full p-4" padding="">
+      <div className="flex gap-4 w-full items-center justify-center p-4">
         <p className="font-bold">Contact</p>
-        <div className="rounded-full dark:bg-neutral-800 bg-neutral-200 py-2 px-4 flex items-center gap-2">
+        <div className="rounded-full dark:bg-neutral-700 bg-gray-200 py-2 px-4 flex items-center gap-2 hover:outline outline-2">
           <img src="/email.svg" className="w-5 h-5 dark:invert"></img>
           <p>meeshroom@gmx.net</p>
         </div>
-        <p></p>
       </div>
-    </div>
+    </GlassCard>
   );
 };
